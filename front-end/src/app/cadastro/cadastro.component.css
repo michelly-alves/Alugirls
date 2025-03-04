@@ -1,0 +1,245 @@
+@font-face {
+  font-family: "Urbanist";
+  src: url("src/app/fontes/Urbanist-Light.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-family: "UrbanistBold";
+  src: url("src/app/fontes/Urbanist-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Urbanist";
+  background-color: #ffffff;
+}
+.cadastro {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 40px;
+  margin-top: 60px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 27px;
+}
+
+h2 {
+  font-family: "UrbanistBold";
+  font-size: 36px;
+  font-weight: 700;
+  color: #c52054;
+  margin: 0;
+}
+
+h4 {
+  font-family: "Urbanist";
+  font-size: 18px;
+  font-weight: 200;
+  color: #000000;
+  margin-top: 5px;
+}
+
+.input-wrapper {
+  margin-bottom: 20px;
+  width: 80%;
+  max-width: 400px;
+}
+
+.input-wrapper label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 10px;
+  font-family: "Urbanist";
+  font-weight: 300;
+  font-size: 16px;
+  border: 1px solid #ffffffd0;
+  box-sizing: border-box;
+  border-color: black;
+  background-color: #b9afaf1e;
+  margin-bottom: 10px;
+  left: 20px;
+}
+
+button {
+  background-color:#6DC4E7; 
+  color: #fffdfd;
+  padding: 10px 60px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: "Urbanist";
+  font-weight: 300;
+  font-size: 15px;
+  margin-top: 20px;
+  margin-left: 25%;
+}
+
+button:hover {
+  background-color: #585799;
+}
+
+.image-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+}
+
+
+.input-wrapper {
+  margin-top: 50px;
+  margin-bottom: 350px;
+  margin-left: 40px;
+  text-align: left;
+  color: #000000;
+}
+
+.text-wrapper {
+  color: #000000;
+  font-family: "Urbanist";
+  font-weight: 500;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro com opacidade */
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-out; /* Animação suave de fade-in */
+}
+
+.modal-content {
+  background-color: #f40202; /* Fundo vermelho */
+  color: #fff; /* Cor do texto em branco */
+  padding: 20px;
+  border-radius: 12px; /* Bordas arredondadas */
+  width: 80%; /* Tamanho flexível */
+  max-width: 400px; /* Largura máxima */
+  text-align: center; /* Centraliza o texto */
+  font-weight: 600;
+  position: relative; /* Necessário para o posicionamento do botão de fechar */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave para o modal */
+  animation: slideUp 0.3s ease-out; /* Animação de slide para cima */
+}
+
+/* Estilo para o botão de fechar */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.close:hover {
+  color: #d9534f; /* Mudança de cor no hover para um tom mais escuro */
+}
+
+/* Efeito de fade-in para a tela de fundo */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animação para o conteúdo do modal */
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.paragrafo {
+
+  padding-left: 110px;
+}
+a{
+  animation: none;
+  color: #6DC4E7;
+  text-decoration: none;  
+}
+
+.senha a{
+  padding-left: 100px;
+  animation: none;
+  color: #c52054;
+  text-decoration: none;   text-decoration: none;  
+}
+
+.login-container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.login-conteiner {
+  text-align: center;
+  margin-top: 210px;
+}
+
+.social-login {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.social-login img {
+  margin: 0 10px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.background-img {
+
+  background-size: cover;
+  background-position: center;
+  background-color: #fdf9f600;
+  background-size: contain; 
+  background-position: 5%;
+  background-repeat: no-repeat;
+
+}
+
+.login-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

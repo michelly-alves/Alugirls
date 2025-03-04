@@ -1,0 +1,33 @@
+@font-face {
+  font-family:  'Urbanist';
+  src: url('src/app/fontes/Urbanist-Light.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'Urbanist';
+  src: url('src/app/fontes/Urbanist-Light.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Urbanist';
+  margin: 0;
+}
+
+.user-perfil {
+  text-decoration: none;
+  color: #000000;
+  font-family: 'Urbanist';
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
+  letter-spacing: 0.1em; background-color: #92909000;
+  }
+  
+  .user-photo {
+    margin-right: 10px;
+  }
+ 
+  

@@ -1,0 +1,92 @@
+@font-face {
+  font-family:  'Urbanist';
+  src: url('src/app/fontes/Urbanist-Medium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'UrbanistBold';
+  src: url('src/app/fontes/Urbanist-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.index{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Urbanist'; 
+  position: fixed;
+
+}
+
+.background-img {
+
+  background-size: cover;
+  background-position: center;
+  background-color: #fdf9f600;
+  background-size: contain; 
+  background-position: 5%;
+  background-repeat: no-repeat;
+
+}
+
+button {
+  background-color: #6DC4E7; 
+  color: white;
+  padding: 10px 50px; 
+  border: none; 
+  border-radius: 15px;
+  cursor: pointer;
+  font-family: 'Urbanist', uUbanist;
+  font-size: 14px;
+  font-weight: 30px;
+  font-weight: 500;
+}
+
+p{
+  color: #6DC4E7; 
+  font-weight: 500;
+  margin: 10px;
+}
+
+h1{
+  color:#C52054;
+  margin: 10px;
+  font-size: 60px;
+  font-family: 'UrbanistBold'; 
+  font-weight: 70px;
+}
+h4{
+  font-weight: 500;
+  text-align: justify;
+  margin: 10px;
+}
+
+.index-div{
+  width: 30%;
+  height: 60px;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+.background-img {
+  position: absolute; 
+  right: -120px; 
+  bottom: 0; 
+  z-index: 0; 
+}
+
+.background-img img {
+  width: 1200px; 
+  height: auto; 
+}
+
+
+a{
+  text-decoration: none;  
+  color: white; 
+}

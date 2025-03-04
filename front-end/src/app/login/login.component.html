@@ -1,0 +1,56 @@
+<div class="login-bg">
+ <div class="background-img">
+  <img src="/assets/img/agency.png" alt="ALUGIRLS" />
+ </div>
+  <div class="login-container">
+    <div class="login-conteiner">
+      <h2>LOGIN</h2>
+      <h4>
+        Não possui uma conta?
+        <a href="http://localhost:4200/register">Cadastre-se</a>
+      </h4>
+
+      <div class="input-wrapper">
+        <div class="text-wrapper">
+          <label for="email">Email</label>
+          <input
+            [(ngModel)]="email"
+            type="email"
+            id="email"
+            placeholder="Digite seu email"
+            required
+          />
+
+          <label for="password">Senha</label>
+          <input
+            [(ngModel)]="password"
+            type="password"
+            id="password"
+            placeholder="Digite sua senha"
+            required
+          />
+        </div>
+
+        <button (click)="login()">Entrar</button>
+
+        <p class="paragrafo">Ou continue com</p>
+        <div class="social-login">
+          <img src="/assets/img/Google.png" alt="Google" />
+          <img src="/assets/img/Facebook.png" alt="Facebook" />
+        </div>
+        <div class="senha">
+          <a href="http://localhost:4200/NovaSenha">Esqueceu a senha?</a>
+        </div>
+      </div>
+
+      <!-- Modal de erro de login -->
+      <div class="modal" *ngIf="showModal">
+        <div class="modal-content">
+          <span class="close" (click)="closeModal()">&times;</span>
+          <p>{{ loginFailMessage }}</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
