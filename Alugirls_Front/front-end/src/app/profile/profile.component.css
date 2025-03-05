@@ -1,0 +1,123 @@
+@font-face {
+  font-family:  'Urbanist';
+  src: url('src/app/fontes/Urbanist-Light.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'UrbanistBold';
+  src: url('src/app/fontes/Urbanist-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family:'Urbanist';
+}
+
+.profile-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-color: #edeceb00;
+  background-size: contain; 
+  background-position: 5%;
+  background-repeat: no-repeat;
+  position: fixed;
+  background-color:#ffffff;
+}
+
+.profile-card {
+  width: 50%; 
+      max-width: 525px; 
+      padding: 20px; 
+      border: 1px solid #54545438;
+      border-radius: 20px;
+      font-family: 'Urbanist';
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 30px;
+      z-index: 1;
+      color: #ababab;
+      background-color:#fffffff1;
+      margin-top: 60px;
+      justify-content: center;
+      justify-content: center;
+      text-align: center;
+      margin-left: 30%;
+}
+
+.profile-content h2 {
+  font-family: 'UrbanistBold';
+  font-size: 30px;
+  font-weight: bold;
+  color: #C52054;
+  margin-bottom: 20px;
+  text-align: center;
+  
+}
+
+.profile-info {
+  font-size: 16px;
+  text-align: left;
+}
+
+.profile-info label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-family:'Urbanist';
+  margin: 20px;
+  background-color: #8e8e8e55;
+  border-radius: 20px;
+  padding-left: 20px;
+  color: #0f1165;
+}
+
+.profile-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  max-width: 450px;
+  width: 488px;
+  justify-content: center;
+  text-align: center;
+}
+
+.profile-buttons button {
+  background-color: #C52054;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family:'Urbanist';
+  text-align: center;
+  width: 250px;
+  margin-left: 55px;
+  background-color: #0f1165;
+}
+
+.profile-buttons button a {
+  color: white;
+  text-decoration: none;
+  font-family:'Urbanist';
+  background-color: #0f1165;
+}
+
+.profile-buttons button:hover {
+  background-color: #0f1165;
+}
+
+#sair{
+  background-color: rgb(210, 43, 43);
+}
+
+span{
+  font-weight: lighter;
+}
