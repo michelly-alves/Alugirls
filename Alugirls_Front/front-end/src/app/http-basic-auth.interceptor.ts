@@ -15,7 +15,7 @@ export class HttpBasicAuthInterceptor implements HttpInterceptor {
 
   intercept(request: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<unknown>> {
     console.log('HttpBasicAuthInterceptor - Test');
-    const credentials = this.storage.get('authorization');
+    const credentials = this.storage.get('token');
    
     if(credentials){
       console.log('HttpBasicAuthInterceptor - credentials: ' + credentials);

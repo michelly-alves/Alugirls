@@ -10,11 +10,12 @@ import { Router } from '@angular/router';
 export class CadastroMoradiaComponent {
   titulo: string = '';
   preco: string = '';
+  contato: string = '';
   endereco = { rua: '', numero: '', bairro: '', cidade: '', estado: '', cep: '' };
   usuario = { id: 2 };  
 
   constructor(private router: Router, private http: HttpClient) {}
-
+ 
   cadastrarmoradia() {
     if (!this.titulo || !this.preco || !this.endereco.rua || !this.endereco.numero || !this.endereco.cep) {
       alert('Por favor, preencha todos os campos obrigatórios.');
@@ -26,6 +27,7 @@ export class CadastroMoradiaComponent {
       preco: this.preco,
       endereco: this.endereco,
       usuario: this.usuario,
+      contato: this.contato
   
     };
 

@@ -13,7 +13,7 @@ export class AuthenticatedGuard implements CanActivate {
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-    if(this.storage.get('authorization')){
+    if(this.storage.get('token')){
       console.log('AuthenticatedGuard - Usuario autenticado');
       return true;
     } else {

@@ -47,12 +47,13 @@
       <div class="moradia-detalhe">
         <div class="moradias-name">{{ moradia.titulo }}</div>
         <div class="moradias-descricao">{{ moradia.descricao }}</div>
-        <div class="moradias-bairro">{{ moradia.endereco?.bairro }}</div> 
-        <div class="moradias-cep">{{ moradia.endereco?.cep }}</div>
-        <div class="moradias-rua">{{ moradia.endereco?.rua }}</div> 
-        <div class="moradias-cidade">{{ moradia.endereco?.cidade }}</div> 
-        <div class="moradias-numero">{{ moradia.endereco?.numero }}</div> 
+        <div class="moradias-bairro">Bairro: {{ moradia.endereco?.bairro }}</div> 
+        <div class="moradias-cep">Cep: {{ moradia.endereco?.cep }}</div>
+        <div class="moradias-rua">Rua: {{ moradia.endereco?.rua }}</div> 
+        <div class="moradias-cidade">Cidade: {{ moradia.endereco?.cidade }}</div> 
+        <div class="moradias-numero">Numero: {{ moradia.endereco?.numero }}</div> 
         <div class="moradias-preco">R${{ moradia.preco }} /por mês</div>
+        <div class="moradias-contato"> Me ligue!: {{ moradia.contato }}</div>
       </div>
     </div>
     </div>
